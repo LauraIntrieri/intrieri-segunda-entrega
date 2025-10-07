@@ -1,0 +1,68 @@
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+    margin-top: 30px;
+}
+
+.parrafos-intro {
+    font-family: $fuente-secundaria;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.producto__imagen {
+    height: 250px;
+    width: 200px;
+}
+
+.producto__info {
+    margin-top: 20px;
+}
+
+.producto__nombre {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.producto__precio {
+     font-size: 30px;
+     font-weight: 800;
+     text-align: center;
+     color: $color-primario;
+     padding: 10px;
+}
+
+.producto__boton {
+    background-color:rgb(0, 0, 0);
+    color: $color-primario;
+    font-family: $fuente-principal;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: $color-primario;
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+@include respond(medium) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

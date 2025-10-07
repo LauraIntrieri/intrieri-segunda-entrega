@@ -1,0 +1,17 @@
+// import reset
+@use "base/reset" as *;
+
+// variables
+@use 'utilities/variables';
+
+/* Layout */
+@use 'layout/header';
+@use 'layout/footer';
+
+
+/* Pages */
+@use 'pages/index';
+@use 'pages/empresa';
+@use 'pages/productos';
+@use 'pages/promociones';
+@use 'pages/contacto';

@@ -1,0 +1,18 @@
+// Import
+
+@use "../utilities/variables" as *;
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Global
+
+main {
+    min-height: 100vh; 
+    background-image: linear-gradient(to top, #C0C0C0 0%, #ffffff); 
+}

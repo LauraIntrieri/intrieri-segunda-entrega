@@ -1,0 +1,19 @@
+@use "../utilities/variables" as *;
+
+.texto-footer {
+     text-align: center;
+     color: $color-secundario;
+
+}
+
+ .contenedor-parrafos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.iconos {
+    width: 25px;
+}
+

@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+/* Main index */
+.video {
+    width: 300px;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-top: 10px;
+}
+
+.btn-comprar {
+    height: 40px;
+    width: 15%;
+    border: none;
+    border-radius: 5%;
+    background-color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+

@@ -1,0 +1,70 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+
+/* pag - contacto */
+
+.contacto {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 5px;
+    background: $bg-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacto__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color:hsl(43, 86%, 26%);
+    font-size: 1.5rem;
+}
+
+.contacto__textarea {
+    min-height: 8rem;
+    border-radius: 5px;
+}
+
+.contacto__button {
+    padding: 0.5rem;
+    background:hsl(0, 89%, 38%);
+    color: $color-white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contacto__button:hover {
+    background: green;
+}
+
+.contacto__input {
+    padding: 8px;
+}
+
+
+@include respond(small) {
+  .contenedor-parrafos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
