@@ -58,4 +58,10 @@
     display: flex;
     flex-direction: column;
   }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
 }
