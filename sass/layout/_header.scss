@@ -79,9 +79,6 @@
     width: 25px;
 }
 
-}
-
-
 
 @include respond(small) {
   .header {
@@ -90,4 +87,31 @@
     height: auto;
     text-align: center;
   }
+
+    .logo {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .titulo {
+     grid-column: 1;
+     grid-row: auto;
+     font-size: 4rem;
+     margin: 1.5rem 0;
+    }
+
+    .carrito .buscador {
+        grid-column: 4;
+        grid-row: auto;
+       
+    }
+
+    ul {
+        flex-direction: column;
+        
+    }
 }
+}
+
+
+
