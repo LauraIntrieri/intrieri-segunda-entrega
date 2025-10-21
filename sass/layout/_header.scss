@@ -1,6 +1,9 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+
+/*Header*/
+
 .header {
     display: grid;
     height: 500px;
@@ -45,7 +48,7 @@
     gap: 5;
 }  
 
-.navbar {
+.mi-navbar {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     background-color: $color-primario;
@@ -54,7 +57,7 @@
     padding: 0;
 }
 
-.navbar ul {
+.mi-navbar ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -62,7 +65,7 @@
     padding: 10px;
 }
 
-.navbar a {
+.mi-navbar a {
     text-decoration: none;
     color: white;
     font-family: $fuente-principal;
@@ -81,11 +84,11 @@
 
 
 @include respond(small) {
-  .header {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    height: auto;
-    text-align: center;
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        text-align: center;
   }
 
     .logo {
@@ -94,10 +97,10 @@
     }
 
     .titulo {
-     grid-column: 1;
-     grid-row: auto;
-     font-size: 4rem;
-     margin: 1.5rem 0;
+        grid-column: 1;
+        grid-row: auto;
+        font-size: 4rem;
+        margin: 1.5rem 0;
     }
 
     .carrito .buscador {
@@ -110,7 +113,7 @@
         flex-direction: column;
         
     }
-}
+ }
 }
 
 

@@ -1,12 +1,14 @@
 @use "../utilities/variables" as *;
 
-.texto-footer {
-     text-align: center;
-     color: $color-secundario;
 
+/*Footer*/
+
+.texto-footer {
+    text-align: center;
+    color: $color-secundario;
 }
 
- .contenedor-parrafos {
+.contenedor-parrafos {
     display: flex;
     justify-content: center;
     text-align: center;
